@@ -9,7 +9,7 @@ const path = require('path');
 
 dotenv.config();
 app.use(cors({
-  origin: 'https://movies1231.netlify.app/', // Allow your frontend domain
+  origin: 'https://movies1231.netlify.app', // Allow your frontend domain
   credentials: true // Allow credentials if needed
 }))
 app.use(bodyParser.json())
