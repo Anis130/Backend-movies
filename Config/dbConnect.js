@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const dbConnect = () => {
+const DbConnect = () => {
   try {
     mongoose.connect("mongodb+srv://anissbellil13:toNS9INDk3j0BPJm@cluster0.groyl.mongodb.net/movies")
     console.log("connected to database")
@@ -9,4 +9,4 @@ const dbConnect = () => {
   }
 }
 
-module.exports = dbConnect
+module.exports = DbConnect

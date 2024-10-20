@@ -1,5 +1,5 @@
 const express = require('express')
-const dbConnect = require('./Config/DbConnect')
+const DbConnect = require('./Config/DbConnect')
 const cors = require("cors")
 const app = express()
 const dotenv = require("dotenv");
@@ -17,6 +17,6 @@ app.use("/api/Auth", require("./Routes/Auth.routes"))
 app.use("/api/Movie", require("./Routes/Movie.routes"))
 
 app.listen(port, () => {
-  dbConnect()
+  DbConnect()
   console.log(`server running port ${port}`)
 })
